@@ -4,7 +4,7 @@
 */
 
 
-var par = prompt("inserisci una parola");
+/* var par = prompt("inserisci una parola");
 par = par.charAt(0).toLocaleLowerCase() + par.slice(1);
 console.log(par);
 
@@ -38,8 +38,7 @@ function palindrome( word1, word2){
   } else {
     alert("La parola " + word1 +  " non è una palindrome")
   }
-  
-}
+} */
  
 
 
@@ -51,12 +50,17 @@ function palindrome( word1, word2){
  * Dichiariamo chi ha vinto.
 */
 
-/* var pariDispari = prompt("Scegli pari o dispari");
+var pariDispari = prompt("Scegli pari o dispari");
 var tuoNumero = parseInt(prompt("Scegli un numero da 1 a 5"));
+console.log("Il tuo numero " + tuoNumero);
 
 var pcNumero = random(1 , 5);
-console.log(pcNumero);
+console.log("Numero del pc " + pcNumero);
 
+var somma = tuoNumero + pcNumero;
+console.log("somma del tuo numero + numero pc " + somma);
+
+numPariDispari(somma);
 
 
 
@@ -68,5 +72,18 @@ function random(number){
   return random;
 }
 
- */
+
+
+//funzione somma pari o dispari
+function numPariDispari (num){
+
+  if( (num % 2) == 0){
+    console.log("Pari hai vinto");
+  } else {
+    console.log("Hai perso");
+  }
+  
+}
+
+ 
 
