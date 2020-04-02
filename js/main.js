@@ -51,6 +51,7 @@ function palindrome( word1, word2){
 */
 
 var pariDispari = prompt("Scegli pari o dispari");
+console.log( "Hai scelto " + pariDispari);
 var tuoNumero = parseInt(prompt("Scegli un numero da 1 a 5"));
 console.log("Il tuo numero " + tuoNumero);
 
@@ -60,7 +61,20 @@ console.log("Numero del pc " + pcNumero);
 var somma = tuoNumero + pcNumero;
 console.log("somma del tuo numero + numero pc " + somma);
 
-numPariDispari(somma);
+
+
+if (numPariDispari(somma) == "pari"){
+  var resParDis = 'pari';
+}else {
+  var resParDis = 'dispari';
+}
+console.log(somma + ' è un numero ' + resParDis);
+
+if (resParDis == pariDispari) {
+  console.log('HAI VINTO!');   
+} else {
+  console.log('HAI PERSO!');    
+}
 
 
 
@@ -74,13 +88,13 @@ function random(number){
 
 
 
-//funzione somma pari o dispari
+//funzione se somma è pari o dispari
 function numPariDispari (num){
 
   if( (num % 2) == 0){
-    console.log("Pari hai vinto");
+    return "pari";
   } else {
-    console.log("Hai perso");
+    return "dispari";
   }
   
 }
