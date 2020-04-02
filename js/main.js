@@ -64,18 +64,18 @@ console.log("somma del tuo numero + numero pc " + somma);
 
 
 if (numPariDispari(somma) == "pari"){
-  var resParDis = 'pari';
+  var parDis = 'pari';
 }else {
-  var resParDis = 'dispari';
+  var parDis = 'dispari';
 }
-console.log(somma + ' è un numero ' + resParDis);
+console.log(somma + ' è un numero ' + parDis);
 
-if (resParDis == pariDispari) {
+
+if (parDis == pariDispari) {
   console.log('HAI VINTO!');   
 } else {
   console.log('HAI PERSO!');    
 }
-
 
 
 //funzione numero random
@@ -85,7 +85,6 @@ function random(number){
 
   return random;
 }
-
 
 
 //funzione se somma è pari o dispari
