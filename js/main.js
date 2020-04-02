@@ -12,11 +12,10 @@ console.log(par);
 var parolaReverse = inverti(par);
 console.log(parolaReverse);
 
-if ( par == parolaReverse){
-  alert("la parola " + par +  " è una palindrome");
-} else {
-  alert("La parola " + par +  " non è una palindrome");
-}
+//invocazione funzione palindrome
+palindrome(par , parolaReverse);
+  
+
 
 
 //funzione inverti
@@ -31,10 +30,17 @@ function inverti(word) {
   return reverse;
 }
 
+//funzione palindrome
+function palindrome( word1, word2){
 
-
-
-
+  if(word1 == word2){
+    alert("la parola " + word1 +  " è una palindrome");
+  } else {
+    alert("La parola " + word1 +  " non è una palindrome")
+  }
+  
+}
+ 
 
 
 /**Pari e Dispari
@@ -44,4 +50,23 @@ function inverti(word) {
  * Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
  * Dichiariamo chi ha vinto.
 */
+
+/* var pariDispari = prompt("Scegli pari o dispari");
+var tuoNumero = parseInt(prompt("Scegli un numero da 1 a 5"));
+
+var pcNumero = random(1 , 5);
+console.log(pcNumero);
+
+
+
+
+//funzione numero random
+function random(number){
+
+  var random = Math.floor( Math.random() *5) +1;
+
+  return random;
+}
+
+ */
 
